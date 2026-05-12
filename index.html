@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alby Rentals | Car Rental in Samoa</title>
+    <meta name="description" content="Explore Samoa with Alby Rentals. We offer reliable, clean, and affordable car rentals in Apia, Upolu. Book your vehicle today.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">
+                <img src="assets/logo.jpg" alt="Alby Rentals Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#fleet">Our Fleet</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#fleet" class="btn btn-primary">Book Now</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <img src="assets/samoa_coastal_road_1778546645328.png" alt="Samoa Coastal Road">
+            <div class="overlay"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Discover Samoa <br>Your Way</h1>
+                <p>Experience the beauty of Upolu with our reliable, affordable, and clean rental vehicles. We make your island adventure unforgettable.</p>
+            </div>
+            <div class="booking-widget">
+                <h3>Find Your Ride</h3>
+                <form id="hero-booking-form">
+                    <div class="form-group">
+                        <label><i class="fa-solid fa-location-dot"></i> Pick-up Location</label>
+                        <select required>
+                            <option value="">Select Location</option>
+                            <option value="Faleolo Airport">Faleolo International Airport</option>
+                            <option value="Apia Office">Apia City Office</option>
+                            <option value="Hotel Delivery">Hotel Delivery</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label><i class="fa-regular fa-calendar"></i> Pick-up Date</label>
+                            <input type="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fa-regular fa-calendar"></i> Drop-off Date</label>
+                            <input type="date" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Search Vehicles</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container about-container">
+            <div class="about-text">
+                <span class="subtitle">Welcome to Alby Rentals</span>
+                <h2>Your Trusted Partner on the Road</h2>
+                <p>Located in the heart of Apia, Samoa, Alby Rentals is dedicated to providing you with the best transportation solutions for your island getaway. Whether you're visiting for business or leisure, we have the perfect vehicle to suit your needs.</p>
+                <div class="features">
+                    <div class="feature">
+                        <div class="feature-icon"><i class="fa-solid fa-car-side"></i></div>
+                        <div>
+                            <h4>Modern Fleet</h4>
+                            <p>Well-maintained, clean, and reliable vehicles.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon"><i class="fa-solid fa-headset"></i></div>
+                        <div>
+                            <h4>24/7 Support</h4>
+                            <p>We're here to help you anytime during your rental.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon"><i class="fa-solid fa-wallet"></i></div>
+                        <div>
+                            <h4>Best Prices</h4>
+                            <p>Competitive rates with no hidden fees.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fleet Section -->
+    <section id="fleet" class="fleet">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">Our Vehicles</span>
+                <h2>Choose Your Perfect Ride</h2>
+            </div>
+            <div class="fleet-grid">
+                <!-- Vehicle 1 -->
+                <div class="vehicle-card">
+                    <div class="vehicle-img">
+                        <img src="assets/economy_car_1778547076279.png" alt="Economy Car">
+                    </div>
+                    <div class="vehicle-info">
+                        <div class="vehicle-top">
+                            <h3>Economy Hatchback</h3>
+                            <div class="price">From <span>$65</span> / day</div>
+                        </div>
+                        <div class="specs">
+                            <span><i class="fa-solid fa-user"></i> 4 Seats</span>
+                            <span><i class="fa-solid fa-suitcase"></i> 2 Bags</span>
+                            <span><i class="fa-solid fa-gauge-high"></i> Auto</span>
+                            <span><i class="fa-solid fa-snowflake"></i> A/C</span>
+                        </div>
+                        <button class="btn btn-primary btn-block open-booking" data-car="Economy Hatchback" data-price="65">Rent Now</button>
+                    </div>
+                </div>
+
+                <!-- Vehicle 2 -->
+                <div class="vehicle-card">
+                    <div class="vehicle-img">
+                        <img src="assets/suv_car_1778547108612.png" alt="SUV">
+                    </div>
+                    <div class="vehicle-info">
+                        <div class="vehicle-top">
+                            <h3>Mid-Size SUV</h3>
+                            <div class="price">From <span>$95</span> / day</div>
+                        </div>
+                        <div class="specs">
+                            <span><i class="fa-solid fa-user"></i> 5 Seats</span>
+                            <span><i class="fa-solid fa-suitcase"></i> 4 Bags</span>
+                            <span><i class="fa-solid fa-gauge-high"></i> Auto</span>
+                            <span><i class="fa-solid fa-snowflake"></i> A/C</span>
+                        </div>
+                        <button class="btn btn-primary btn-block open-booking" data-car="Mid-Size SUV" data-price="95">Rent Now</button>
+                    </div>
+                </div>
+
+                <!-- Vehicle 3 -->
+                <div class="vehicle-card">
+                    <div class="vehicle-img">
+                        <img src="assets/pickup_truck_1778547248490.png" alt="Pickup Truck">
+                    </div>
+                    <div class="vehicle-info">
+                        <div class="vehicle-top">
+                            <h3>Double-Cab Pickup</h3>
+                            <div class="price">From <span>$120</span> / day</div>
+                        </div>
+                        <div class="specs">
+                            <span><i class="fa-solid fa-user"></i> 5 Seats</span>
+                            <span><i class="fa-solid fa-suitcase"></i> 3 Bags</span>
+                            <span><i class="fa-solid fa-gauge-high"></i> Auto</span>
+                            <span><i class="fa-solid fa-snowflake"></i> A/C</span>
+                        </div>
+                        <button class="btn btn-primary btn-block open-booking" data-car="Double-Cab Pickup" data-price="120">Rent Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-card">
+                <div class="contact-info">
+                    <span class="subtitle">Get In Touch</span>
+                    <h2>Contact Alby Rentals</h2>
+                    <p>Have questions or ready to book? Reach out to our friendly team in Apia.</p>
+                    <div class="contact-details">
+                        <div class="detail-item">
+                            <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                            <div>
+                                <h5>Phone</h5>
+                                <p>+685 21271 / +685 7611239</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div>
+                                <h5>Email</h5>
+                                <p>albyrentals@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <h5>Location</h5>
+                                <p>Apia, Upolu, Samoa</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="assets/logo.jpg" alt="Alby Rentals Logo" class="footer-logo">
+                    <p>Your reliable car rental partner in beautiful Samoa. Making your island journey seamless and unforgettable.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#fleet">Our Fleet</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-google"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Alby Rentals Samoa. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div id="booking-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-header">
+                <h2>Complete Your Booking</h2>
+                <p id="modal-car-name">Economy Hatchback</p>
+            </div>
+            
+            <!-- Step 1: Details -->
+            <div class="booking-step active" id="step-1">
+                <form id="modal-booking-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>First Name</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Last Name</label>
+                            <input type="text" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Pick-up Date</label>
+                            <input type="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Drop-off Date</label>
+                            <input type="date" required>
+                        </div>
+                    </div>
+                    <div class="summary-box">
+                        <div class="summary-row">
+                            <span>Daily Rate</span>
+                            <span id="summary-rate">$65.00</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Estimated Total (3 days)</span>
+                            <span id="summary-total">$195.00</span>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Proceed to Payment</button>
+                </form>
+            </div>
+
+            <!-- Step 2: Payment (Mock) -->
+            <div class="booking-step" id="step-2">
+                <div class="payment-ui">
+                    <div class="credit-card-mock">
+                        <div class="cc-logo"><i class="fa-brands fa-cc-visa"></i> <i class="fa-brands fa-cc-mastercard"></i></div>
+                        <input type="text" placeholder="Card Number" class="cc-input" maxlength="19">
+                        <div class="cc-row">
+                            <input type="text" placeholder="MM/YY" class="cc-input half">
+                            <input type="text" placeholder="CVC" class="cc-input half">
+                        </div>
+                        <input type="text" placeholder="Cardholder Name" class="cc-input">
+                    </div>
+                    <button class="btn btn-primary btn-block" id="pay-now-btn">Pay <span id="pay-btn-amount">$195.00</span></button>
+                    <button class="btn btn-outline btn-block" id="back-to-details">Back</button>
+                </div>
+            </div>
+
+            <!-- Step 3: Success -->
+            <div class="booking-step" id="step-3">
+                <div class="success-message">
+                    <div class="success-icon"><i class="fa-solid fa-check"></i></div>
+                    <h3>Booking Confirmed!</h3>
+                    <p>Thank you for choosing Alby Rentals. Your reservation is complete and a confirmation email has been sent.</p>
+                    <button class="btn btn-primary btn-block close-modal-btn">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
