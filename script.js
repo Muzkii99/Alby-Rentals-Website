@@ -41,13 +41,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.getElementById('contact-form').addEventListener('submit', (e) => {
         e.preventDefault();
+        
+        const name = document.getElementById('contact-name').value;
+        const email = document.getElementById('contact-email').value;
+        const message = document.getElementById('contact-message').value;
+
+        const subject = encodeURIComponent(`Inquiry ${name}`);
+        const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+        
+        // Open the user's default email client
+        window.location.href = `mailto:albyrentals@gmail.com?subject=${subject}&body=${body}`;
+
         const btn = e.target.querySelector('button');
         const originalText = btn.innerText;
-        btn.innerText = 'Sending...';
+        btn.innerText = 'Opening Email Client...';
         btn.disabled = true;
         
         setTimeout(() => {
-            btn.innerText = 'Message Sent!';
+            btn.innerText = 'Message Prepared!';
             btn.style.backgroundColor = '#10b981';
             e.target.reset();
             
